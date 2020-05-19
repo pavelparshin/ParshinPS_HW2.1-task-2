@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2B19AC8F247441B100889BC7 /* ParshinPS_HW2.1 task 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ParshinPS_HW2.1 task 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B19AC8F247441B100889BC7 /* Traffic lights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Traffic lights.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B19AC92247441B100889BC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B19AC94247441B100889BC7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2B19AC96247441B100889BC7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		2B19AC90247441B100889BC7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2B19AC8F247441B100889BC7 /* ParshinPS_HW2.1 task 2.app */,
+				2B19AC8F247441B100889BC7 /* Traffic lights.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,7 +84,7 @@
 			);
 			name = "ParshinPS_HW2.1 task 2";
 			productName = "ParshinPS_HW2.1 task 2";
-			productReference = 2B19AC8F247441B100889BC7 /* ParshinPS_HW2.1 task 2.app */;
+			productReference = 2B19AC8F247441B100889BC7 /* Traffic lights.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -292,9 +292,9 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.pavelparshin.ParshinPS-HW2-1-task-2";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Traffic lights";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,9 +310,9 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.pavelparshin.ParshinPS-HW2-1-task-2";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Traffic lights";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
