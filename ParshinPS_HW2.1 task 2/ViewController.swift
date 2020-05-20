@@ -10,35 +10,33 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    enum lightVariable {
+           case none, red, yellow, green
+       }
+    
     @IBOutlet weak var redLightView: UIView!
     @IBOutlet weak var yellowLightView: UIView!
     @IBOutlet weak var greenLightView: UIView!
     @IBOutlet weak var switchLightButton: UIButton!
     
-    enum lightVariable {
-        case none, red, yellow, green
-    }
-    
     var currentLight = lightVariable.none
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        redLightView.alpha = 0.3
-        yellowLightView.alpha = 0.3
-        greenLightView.alpha = 0.3
         
-        redLightView.layer.cornerRadius = 50
-        yellowLightView.layer.cornerRadius = 50
-        greenLightView.layer.cornerRadius = 50
+        super.viewDidLoad()
+
+        redLightView.layer.cornerRadius = redLightView.frame.width / 2          //Исправление. Было redLightView.layer.cornerRadius = 50
+        yellowLightView.layer.cornerRadius = yellowLightView.frame.width / 2
+        greenLightView.layer.cornerRadius = greenLightView.frame.width / 2
         switchLightButton.layer.cornerRadius = 10
     }
 
     @IBAction func switchLightButtonPressed() {
+        
+        switchLightButton.setTitle("NEXT", for: .normal)
         switch currentLight {
         case .none:
             redLightView.alpha = 1
-            switchLightButton.setTitle("NEXT", for: .normal)
             currentLight = .yellow
         case .red:
             redLightView.alpha = 1
